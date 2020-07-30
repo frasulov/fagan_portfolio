@@ -1,0 +1,130 @@
+{% extends "fagan_port/layout.html" %}
+{% load static %}
+{% block body %}
+
+      <div id="row-first" class="row">
+          <div class="col-md-12 col-lg-6">
+              <div style="width: 90%;">
+              <img class="img-thumbnail circle" src="{% static 'fagan_port/images/image-1.jpg' %}" alt="">
+              </div>
+          </div>
+          <div class="col-md-12 col-lg-6 mt-5">
+              <div style="width: 85%;height: 90%;">
+                    <div style="color:#aaa;font-family: 'Varela Round', sans-serif;">I am 
+                        <span class="txt-type" data-wait="3000" data-words='["Frontend-developer","Backend-developer", "Deisgner","Fullstack-developer","Programmer"]'></span>
+                    </div>
+                    <h1 id="vv" class="home-name mb-4 mt-2">Fagan Rasulov</h1>
+                    <p class="home-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptatum ab illum, delectus labore, rem itaque eius nihil blanditiis optio asperiores, excepturi laboriosam commodi natus error accusamus esse saepe! Iusto!</p>
+                    <a href="{% static 'fagan_port/Main_CV.pdf' %}" download="FaganRasulovCV.pdf" target="_blank" style="text-decoration: none;" class="d-block d-sm-inline button-1 mt-3">Download CV</a>
+                    <a href="{% url 'contact' %}" class="d-block d-sm-inline button-1 mt-3" style="text-decoration: none;">Contact</a>
+                </div>
+         </div>
+      </div>
+
+      <div class="container" style="margin-top: 100px">
+        <h4><span class="fs">Wha</span><span class="sf">t I know</span></h4>
+        <div class="row port mt-5">
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-1">
+                       <p><i class="fab fa-python"></i></p>
+                    </div>
+                    <div class="col-11">
+                        <h4>Python</h4>
+                        <p><a target="_blank" style="color: #9e6a2e" href="https://www.python.org/">Python</a> is an interpreted, object-oriented, high-level programming language with dynamic semantics. I have the most experienced skills in Python and use the <a style="color:#9e6a2e;" target="_blank" href="https://www.djangoproject.com/">Django</a> Framework for Web App Development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="row port">
+                    <div class="col-1"><i class="fab fa-java"></i></div>
+                    <div class="col-11">
+                        <h4>Java</h4>
+                        <p>There are lots of applications and websites that will not work unless you have <a target="_blank" style="color: #9e6a2e" href="https://www.oracle.com/java/technologies/">Java</a> installed, and more are created every day. Java is fast, secure, and reliable. I have most experienced skills on Java. I have created 2D Games on Java.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row port mt-3 mb-3">
+          <div class="col-12 col-lg-6">
+              <div class="row">
+                  <div class="col-1">
+                     <p><i class="fab fa-html5"></i></p>
+                  </div>
+                  <div class="col-11">
+                      <h4>HTML</h4>
+                      <p>HTML is the standard markup language for the Web page. HTML is the markup language that we use to structure and give meaning to our web content, for example defining paragraphs, headings, and data tables, or embedding images and videos on the page. I have the most experienced skills in HTML.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-lg-6">
+              <div class="row port">
+                  <div class="col-1"><i class="fab fa-css3-alt"></i></div>
+                  <div class="col-11">
+                      <h4>CSS</h4>
+                      <p>CSS stands for Cascading Style Sheets. CSS is a language of style rules that we use to apply styling to our HTML content, for example setting background colors and fonts, and laying out our content in multiple columns. I have the most experienced skills in CSS.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row port mt-3 mb-3">
+        <div class="col-12 col-lg-6">
+            <div class="row">
+                <div class="col-1">
+                   <p><i class="fab fa-js"></i></p>
+                </div>
+                <div class="col-11">
+                    <h4>Javascript</h4>
+                    <p><a target="_blank" style="color: #9e6a2e" href="https://www.javascript.com/">Javascript</a> is a scripting language that enables you to create dynamically updating content, control multimedia, animate images, and pretty much everything else. I have most experienced skill in React js, Jquery and Ajax.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="row port">
+                <div class="col-1"><i class="fab fa-node-js"></i></div>
+                <div class="col-11">
+                    <h4>Node js</h4>
+                    <p>As an asynchronous event-driven JavaScript runtime, <a target="_blank" style="color: #9e6a2e" href="https://nodejs.org/en/">Node.js</a> is designed to build scalable network applications. I have most experienced skills on Express framework of Node.js. I have wrote backend of many Web Applications on Node.js</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row port mt-3 mb-3">
+        <div class="col-12 col-lg-6">
+            <div class="row">
+                <div class="col-1">
+                   <p style="color: #9e6a2e;font-size: 28px;font-weight: bold;padding-bottom:10px; line-height: 100%;">C</p>
+                </div>
+                <div class="col-11">
+                    <h4>C/C++ Development</h4>
+                    <p><a target="_blank" style="color: #9e6a2e" href="https://www.learn-c.org/">C</a> is a general-purpose, procedural computer programming language. I have experienced skills in C and create a lot of projects on C such as (Library Management System, Employee Management System and etc.)</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-lg-6">
+            <div class="row port">
+                <div class="col-1" ><i style="font-size: 25px !important;" class="fas fa-desktop"></i></div>
+                <div class="col-11">
+                    <h4>Full Stack Development</h4>
+                    <p>I am a Full Stack Developer. Generally, I am using, Node.Js, Express, <a target="_blank" style="color: #9e6a2e" href="https://www.mongodb.com/">Mongo DB</a>  or Python, Django, SQLite as a backend and HTML, CSS, JS, <a target="_blank" style="color: #9e6a2e" href="https://reactjs.org/">React</a>, <a target="_blank" style="color: #9e6a2e" href="https://jquery.com/">Jquery</a>, Ajax for frontend.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+      </div>
+
+      <div class="certifcates container mt-5">
+        <h4><span class="fs">Cert</span><span class="sf">icates</span></h4>
+        <div class="row mt-3 mb-3">
+        </div>
+      </div>
+      
+    <div class="imgsld multiple-items">
+        <div class="items"><a href="{% static 'fagan_port/images/certf.png' %}" data-lightbox="photogallery"><img src="{% static 'fagan_port/images/certf.png' %}"></a></div>
+      <div class="items"><a href="{% static 'fagan_port/images/certf.png' %}" data-lightbox="photogallery"><img src="{% static 'fagan_port/images/certf1.png' %}"></a></div>
+      <div class="items"><a href="{% static 'fagan_port/images/certf1.png' %}" data-lightbox="photogallery"><img src="{% static 'fagan_port/images/certf.png' %}"></a></div>
+      <div class="items"><a href="{% static 'fagan_port/images/certf.png' %}" data-lightbox="photogallery"><img src="{% static 'fagan_port/images/certf1.png' %}"></a></div>
+      <div class="items"><a href="{% static 'fagan_port/images/certf1.png' %}" data-lightbox="photogallery"><img src="{% static 'fagan_port/images/certf.png' %}"></a></div>
+  </div>
+
+{% endblock %}

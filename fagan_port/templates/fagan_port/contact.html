@@ -1,0 +1,68 @@
+{% extends "fagan_port/layout.html" %}
+{% load static %}
+{% block body %}
+
+<div class="mt-4 page-title">
+    <h1 class="text-center">Contact</h1>
+    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</div>
+
+{% if message %}
+{% if message_type == True %}
+    <div class="container list-group-item-success p-2 pl-4" style="border-radius: 8px">{{message}}</div>
+{% else %}
+    <div class="container list-group-item-danger p-2 pl-4" style="border-radius: 8px">{{message}}</div>
+{% endif %}
+{% endif %}
+<div class="container contact" style="margin-bottom: 38.5px;margin-top:25px">
+    <div class="row">
+        <div class="col-md-12 col-lg-4"> 
+            <div class="row">
+                <div class="col-2">
+                    <i style="margin-left: 4px;" class="fas fa-mobile-alt"></i>
+                </div>
+                <div class="col-10">
+                    <strong>+994 70 556 60 41</strong>
+                    <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>  
+            </div>
+            <div class="mt-3 mb-3 row">
+                <div class="col-2">
+                    <i style="margin-left: 3px;" class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="col-10">
+                    <strong>Baku, Azerbaijan</strong>
+                    <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>  
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <i class="far fa-envelope"></i>
+                </div>
+                <div class="col-10">
+                    <strong>frasulov1309@gmail.com</strong>
+                    <p class="">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                </div>  
+            </div>
+        </div>
+        <div class="col-md-12 col-lg-8">
+            <h4><span class="fs">How Ca</span><span class="sf">n I help you?</span></h4>
+            <form action="{% url 'sendmail' %}" method="post">
+                {% csrf_token %}
+                <div class="row mt-4">
+                    <div class="col-sm-12 col-md-6">
+                        <input name="fullname" type="text" class="feedback-input" placeholder="Full name" />
+                        <input name="email" type="email" class="feedback-input" placeholder="Email address" />
+                        <input name="subject" type="text" class="feedback-input" placeholder="Subject" />
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                        <textarea name="text" class="feedback-input" placeholder="Message"></textarea>
+                    </div>
+                </div>
+                <input class="button-1" style="width: 98%;margin-left: 1%;" type="submit" value="Send Message"/>
+              </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

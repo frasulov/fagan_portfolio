@@ -1,0 +1,42 @@
+body, html{
+    width: 100%;
+}
+
+.page-title{
+    border-top: 2px solid #f2f2f2;
+    border-top-color: rgb(242, 242, 242);
+    border-bottom: 2px solid #f2f2f2;
+    border-bottom-color: rgb(242, 242, 242);
+    padding: 65px 70px;
+    margin-bottom: 50px;
+    text-align: left;
+    background-color: rgba(158,106,33,0.07);
+    border-top-color: #eeeeee;
+    border-bottom-color: #eeeeee;
+}
+
+.page-title h1{
+    color: #333333;
+    font-size: 44px;
+    font-family: Poppins, Helvetica, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0px;
+}
+
+.contact i{
+    font-size:33px;
+    color: #9e6a2e;
+    padding: 5px;
+}
+
+.contact strong{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.contact p{
+    line-height: 1.75em;
+    font-weight: 300;
+    color: #666666;
+}

@@ -1,0 +1,19 @@
+.imgsld {
+	display: flex;
+}
+
+.imgsld .items {
+	width: 350px;
+	height: 250px;
+	margin: 50px;
+}
+
+.imgsld .items img{
+	width: 350px;
+	height: 250px;
+	transition: all linear .4s;
+}
+
+.imgsld .slick-center a img{
+	transform: scale(1.2);
+}
